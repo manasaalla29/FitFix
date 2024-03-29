@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://png.pngtree.com/background/20230516/original/pngtree-an-empty-gym-with-all-of-the-machines-picture-image_2611112.jpg') center/cover no-repeat;
+  }
+  
+  .container {
+    background-color: rgba(135, 133, 133, 0.8); /* Increased opacity for better readability */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    overflow: auto; /* Ensures smooth scrolling */
+    max-height: 90vh; /* Adjusted to ensure the form doesn't extend beyond the viewport */
+    width: 350px; /* Adjusted width to accommodate new fields */
+    padding: 20px;
+    margin: 20px; /* Adds some space around the container */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px; /* Ensures consistent spacing above labels */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  textarea,
+  select {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 16px); /* Ensures inputs do not overflow their container */
+  }
+  
+  textarea {
+    resize: vertical; /* Allows vertical resizing */
+    height: 100px; /* Default height */
+  }
+  
+  button {
+    background-color: #34ce20;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Ensures consistent spacing above the button */
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
